@@ -17,6 +17,14 @@ public class Rectangle extends GeometricObject {
         return width;
     }
 
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", height=" + height +
+                '}';
+    }
+
     /** Set a new width */
     public void setWidth(double width) {
         this.width = width;

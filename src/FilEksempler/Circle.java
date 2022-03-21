@@ -4,6 +4,13 @@ package FilEksempler;
 public class Circle extends GeometricObject {
     private double radius;
 
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
+    }
+
     public Circle() {
     }
 
