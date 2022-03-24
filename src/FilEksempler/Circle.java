@@ -8,6 +8,9 @@ public class Circle extends GeometricObject {
     public String toString() {
         return "Circle{" +
                 "radius=" + radius +
+                ", colour= " + getColor() +
+                ", perimeter= " + getPerimeter() +
+                ", area= " + getArea() +
                 '}';
     }
 

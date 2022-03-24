@@ -22,6 +22,9 @@ public class Rectangle extends GeometricObject {
         return "Rectangle{" +
                 "width=" + width +
                 ", height=" + height +
+                ", colour= " + getColor() +
+                ", perimeter= " + getPerimeter() +
+                ", area= " + getArea() +
                 '}';
     }
 

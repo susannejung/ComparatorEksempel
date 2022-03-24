@@ -22,7 +22,30 @@ public class TestComparator {
         System.out.println(tabel.get(0));
         System.out.println(tabel.get(1));
         System.out.println(tabel.get(2));
+        System.out.println();
 
+        tabel.get(0).setColor("red");
+        tabel.get(1).setColor("green");
+        tabel.get(2).setColor("blue");
+
+        ColourComparator cComparator= new ColourComparator();
+        Collections.sort(tabel,cComparator);
+        tabel.get(0).setColor("blue");
+        tabel.get(1).setColor("green");
+        tabel.get(2).setColor("fake");
+
+        System.out.println(tabel.get(0));
+        System.out.println(tabel.get(1));
+        System.out.println(tabel.get(2));
+        System.out.println();
+
+
+        PerimeterComparator pComparator= new PerimeterComparator();
+        Collections.sort(tabel,cComparator);
+        System.out.println(tabel.get(0));
+        System.out.println(tabel.get(1));
+        System.out.println(tabel.get(2));
+        System.out.println();
 
 
 
